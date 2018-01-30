@@ -1,0 +1,34 @@
+<div 
+  *ngIf="hero" 
+  class="hero-data" 
+  uiSref="editHero" 
+  [uiParams]="{ heroId: hero._id }">
+    <div class="hero-data__left">
+        <a class="hero-data__image-container">
+            <span 
+              class="notify-badge">
+              {{hero._id | ordinal}}
+            </span>
+            <img 
+              [src]="hero._picture === emptyUrl || !hero._picture?emptyImg:hero._picture" 
+              [alt]="hero._name" 
+              [title]="hero._name" 
+              srcset="" 
+              class="hero-data__image" 
+              >
+        </a>
+    </div>
+    <div class="hero-data__right">
+      <h3 class="hero-data__nick-name">
+        {{hero._nickname}}
+      </h3>
+      <span 
+        class="hero-data__aditional-data">
+        {{hero._name}}
+      </span>
+      <span 
+        class="hero-data__aditional-data">
+        Estatura: {{hero._height}}
+      </span>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="container__row">
+      <div 
+        class="container__col-sm-12 container__col-md-4" 
+        *ngFor="let hero of (heroesStore | async | array)">
+          <hero 
+            [hero]=hero>
+          </hero>
+      </div>
+    </div>
+  </div> 
+</div>
