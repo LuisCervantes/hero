@@ -1,6 +1,6 @@
 {
-  "name": "heroes",
-  "version": "0.1.0",
+  "name": "Heroes",
+  "version": "1.0.0",
   "dependencies": {
     "@angular/animations": "~5.0.0",
     "@angular/common": "~5.0.0",
@@ -20,6 +20,7 @@
     "@ngrx/store-devtools": "^5.0.1",
     "@uirouter/angular": "^1.0.0-rc.3",
     "angular-in-memory-web-api": "~0.5.0",
+    "array-union": "^1.0.2",
     "chai": "^4.1.2",
     "core-js": "^2.4.1",
     "karma-chai": "^0.1.0",
@@ -81,5 +82,10 @@
     "serve": "node_modules\\.bin\\webpack-dev-server",
     "compile": "node_modules\\.bin\\webpack",
     "test": "mocha"
-  }
+  },
+  "description": "This is an app that allow you to consume a API-rest service and save de result on a client-global-store using ngrx as toll, also it´s build with web pack",
+  "main": "index.js",
+  "repository": "https://github.com/LuisCervantes/hero.git",
+  "author": "Luis Cervantes <lcervanteso@psl.com.co>",
+  "license": "MIT"
 }
